@@ -33,8 +33,8 @@
        </div>
 
        <div class="input-group">
-            <input type="text" placeholder="Add things to do..." class="w-75 p-3">
-            <button class="w-25">Add</button>
+            <input type="text" placeholder="Add things to do..." class="w-75 p-3" v-model="newTask">
+            <button class="w-25" @click="addTask()">Add</button>
        </div>
     </div>
 </div>
