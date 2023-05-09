@@ -22,10 +22,15 @@
        <h1 class="text-capitalize text-center py-5">to do list</h1>
 
        <div class="card mb-3">
-            <ul class="list-group list-group-flus" v-for="task in tasks">
+            <ul class="list-group list-group-flus" v-for="(task, i) in tasks">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>{{ task.todo }}</span>
-                    <div class="trash">
+                    <span class="w-75"
+                    :class="task.do ? 'text-decoration-line-through' : ''"
+                    @click="toggleDo()">
+                        {{ task.todo }}
+                    </span>
+                    <div class="trash"
+                    @click="deleteTask(i)">
                         <i class="fa-solid fa-trash"></i>
                     </div>
                 </li>

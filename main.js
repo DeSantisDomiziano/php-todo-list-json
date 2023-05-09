@@ -7,6 +7,7 @@ createApp({
         newTask: '',
         api_data: 'data_php.php',
         api_addData: 'add_data.php',
+        api_deleteData: 'delete_data.php',
     }
   },
   methods: {
@@ -15,6 +16,20 @@ createApp({
 
         axios
         .post(this.api_addData,
+            data,
+            {
+                headers: {'Content-Type': 'multipart/form-data'}
+            })
+        .then(resp => {
+            this.task = resp.data
+            location.reload();
+        })
+    },
+    deleteTask(i) {
+        const data = { i }
+
+        axios
+        .post(this.api_deleteData,
             data,
             {
                 headers: {'Content-Type': 'multipart/form-data'}
