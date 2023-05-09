@@ -1,0 +1,48 @@
+#app {
+    background-color: #04043f;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5.5rem;
+    color: #bcbcbc;
+}
+
+.card {
+    font-weight: 700;
+    font-size: 1.75rem;
+    max-height: 50vh;
+    overflow-y: auto
+}
+
+.fa-trash {
+    color: #ffffff;
+    background-color: #d50000;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.fa-trash:hover {
+    color: #000000;
+    background-color: #820000;
+}
+
+button {
+    font-size: 2.25rem;
+    color: #ffd700;
+    font-weight: 700;
+    border: 5px solid #ffd700;
+    background-color: transparent;
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+
+input {
+    font-size: 1.25rem;
+    border: 5px solid #ff00ea;
+    border-right: 0;
+    border-radius: 0.75rem 0 0 0.75rem;
+}
