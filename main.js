@@ -21,6 +21,7 @@ createApp({
             })
         .then(resp => {
             this.task = resp.data
+            location.reload();
         })
     }
 
