@@ -1,6 +1,6 @@
 <?php 
 
-if (isset($_POST['newTask'])) {
+if (!empty($_POST['newTask'])) {
     $task = [
         "todo" => $_POST['newTask'],
         "do" => false

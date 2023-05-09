@@ -1,5 +1,5 @@
 <?php 
-if (isset($_POST['i'])) {
+if (!empty($_POST['i'])) {
 
     $dataPHP = file_get_contents('data_json.json');
     $convertData = json_decode($dataPHP, true);
