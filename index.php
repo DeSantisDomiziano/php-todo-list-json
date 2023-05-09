@@ -22,27 +22,9 @@
        <h1 class="text-capitalize text-center py-5">to do list</h1>
 
        <div class="card mb-3">
-            <ul class="list-group list-group-flus">
+            <ul class="list-group list-group-flus" v-for="task in tasks">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Learn</span>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Learn</span>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Learn</span>
-                    <div class="trash">
-                        <i class="fa-solid fa-trash"></i>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Learn</span>
+                    <span>{{ task.todo }}</span>
                     <div class="trash">
                         <i class="fa-solid fa-trash"></i>
                     </div>
